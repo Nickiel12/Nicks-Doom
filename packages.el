@@ -48,3 +48,7 @@
 ;(unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
+(package! fragtog :recipe
+  (:host github
+   :repo "io12/org-fragtog"
+   :files ("org-fragtog.el")))

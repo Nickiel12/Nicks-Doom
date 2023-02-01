@@ -74,7 +74,8 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
-
+;;
+(setq org-startup-with-inline-images t)
 (setq history-length 100)
 (put 'minibuffer-history 'history-length 50)
 (put 'evil-ex-history 'history-length 50)

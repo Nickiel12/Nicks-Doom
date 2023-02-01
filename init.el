@@ -195,3 +195,5 @@
 
 ;(add-hook 'direnv 'direnv-mode)
 (setq lsp-rust-server 'rust-analyzer)
+(add-hook 'org-mode-hook 'org-fragtog-mode) ;; automatically expand/preview LaTeX
+(add-hook 'org-mode-hook 'org-latex-preview) ;; automatically preview LaTeX on open
