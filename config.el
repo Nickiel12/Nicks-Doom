@@ -80,3 +80,18 @@
 (put 'minibuffer-history 'history-length 50)
 (put 'evil-ex-history 'history-length 50)
 (put 'kill-ring 'history-length 25)
+
+
+(defun save-desktop ()
+  "Save desktop with a name that includes the current project's name."
+        (interactive)
+        (desktop-save default-directory))
+
+(defun read-desktop ()
+  "Load desktop with a name that includes the current project's name."
+  (interactive)
+    (desktop-read))
+
+(map! :leader
+        :desc "Save Workspace desktop"   "ps" #'save-desktop
+        :desc "Load Workspace desktop"   "pl" #'read-desktop)
